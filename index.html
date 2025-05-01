@@ -1,35 +1,39 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.overtracking.com/t/tulzMWGeZ9dDaSSJc/"></script>
+     <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SLRFC8FP2S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SLRFC8FP2S');
+    </script>
+    
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <link rel="icon" type="image/png" href="/public/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+    <link rel="shortcut icon" href="/public/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png" />
+    <link rel="manifest" href="/public/site.webmanifest" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Galaxy Visualization</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #000;
-      }
-      
-      #app {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
+    <title>xxtz</title>
+
+    <script type="module" crossorigin src="./assets/compiled.js"></script>
+    <link rel="stylesheet" crossorigin href="/src/styles.css">
   </head>
+  
   <body>
-    <body>
-      <div id="app"></div>
-      <audio id="background-music" loop>
-        <!-- You'll need to add your music file to a public directory in your project -->
-        <source src="afterthought.mp3" type="audio/mp3">
-      </audio>
-      <script type="module" src="/src/main.ts"></script>
-    </body>
+
+    <div id="app"></div>
+    <audio id="background-music">
+    </audio>
+
   </body>
 </html>
